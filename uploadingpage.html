@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="css/uploadform.css" >
+<script src="js/uploadform.js"></script>
+<link rel="stylesheet" href="css/uploadpage.css" >
+</head>
+<body>
+<div class="nav">
+<div class="header" style="font-size:25px; font-family: 'Duru Sans', sans-serif; border:2px solid black; text-align:center; padding-top:10px; margin-top:3px; border-color:#FF0000 #FFFF00 #7CFC00 #00FFFF; background-color:#483D8B;">REALESTATE</div>
+<a class="home home1" href="home.html" target="_self">HOME</a>
+<a class="home" href="uploadingpage.html" target="_self">UPLOAD</a>
+<a class="home" href="verifyingpage.html" target="_self">VERIFY YOUR UPLOAD</a>
+<a class="home" href="reportpage.html" target="_self">YOUR REPORT</a>
+<a class="home" href="gallery.html" target="_self">GALLERY</a>
+</div>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h2>Upload Property Detail</h2>
+        <p>
+           Fill the below form completely to list your property detail into our database
+        </p>
+        <form role="form" method="post" id="reused_form" enctype="multipart/form-data"  >
+            <div class="form-group">
+                <label for="name">
+                    Name:</label>
+                <input type="text" class="form-control"
+                id="name" name="name"  required maxlength="50">
+
+            </div>
+            <div class="form-group">
+                <label for="email">
+                    Email:</label>
+                <input type="email" class="form-control"
+                id="email" name="email" required maxlength="50">
+            </div>
+			 <div class="form-group">
+                <label for="name">
+                    City Name:</label>
+                <input type="text" class="form-control"
+                id="name" name="name"  required maxlength="50">
+
+            </div>
+            <div class="form-group">
+                <label for="name">
+                    More Detail:</label>
+                <textarea class="form-control" type="textarea" name="message"
+                id="message" placeholder="Your Detail Here"
+                maxlength="4000" rows="7"></textarea>
+            </div>
+
+                        <div class="form-group">
+                <label for="name">
+                    Image Upload:</label>
+                <input type="file" class="form-control" id="image" name="image"  required>
+            </div>
+
+            <button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs">UPLOAD! →</button>
+
+        </form>
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+            <h3>Sent your message successfully!</h3>
+        </div>
+        <div id="error_message"
+        style="width:100%; height:100%; display:none; ">
+            <h3>Error</h3>
+            Sorry there was an error sending your form.
+
+        </div>
+    </div>
+</div>
+<br>
+<div class="footer">
+<p class="footer-heart">
+  <b>Made with &#128151; in <a href="https://www.lpu.in/" target="_blank">LPU</a></b>
+</p>
+</div>
+</body>
+</html>
